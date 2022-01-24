@@ -6,7 +6,7 @@ import csv
 import os
 
 # Add a variable to load a file from a path.
-file_to_load = os.path.join("..", "Resources", "election_results.csv")
+file_to_load = os.path.join(r"C:\Users\m164363\OneDrive\Personal - Academic\CIP\Module_3_Python\Resources", "election_results.csv")
 # Add a variable to save the file to a path.
 file_to_save = os.path.join(r"C:\Users\m164363\OneDrive\Personal - Academic\CIP\Module_3_Python\Election Analysis\analysis", "election_analysis.txt")
 
@@ -121,9 +121,7 @@ with open(file_to_save, "w") as txt_file:
     # 7: Print the county with the largest turnout to the terminal.
     largest_county_summary = (
         f"-------------------------\n"
-        f"Largest County: {large_county_name}\n"
-        f"County with largest turnout of votes: {large_county_votes:,}\n"
-        f"Largest County vote percentage: {county_vote_percentage:.1f}%\n"
+        f"Largest County Turnout: {large_county_name}\n"
         f"-------------------------\n")
     print(largest_county_summary)
 
